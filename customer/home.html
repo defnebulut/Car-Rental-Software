@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daphne Rental</title>
+</head>
+<script src="js/navbarFooter.js"></script>
+
+<body>
+  <div w3-include-html="navbarFooter.html"></div>
+
+  <div class="bg-img">
+    <form action="reservation.html" class="container" id="h-form">
+      <label for="location" style="font-size: 30px; font-weight: 800; color: rgb(48, 0, 0);" id="prl"><b>Pick-up&Return
+          Location*</b></label>
+      <input type="text" style="width: 100%" placeholder="Pick-up&Return Location" name="pl" required />
+      <div class="coc-form">
+        <div class="coc-block-row">
+          <label class="coc-block-label" for="pdate" id="pdate" style="
+                display: inline;
+                font-size: 30px;
+                font-weight: 800;
+                color: rgb(48, 0, 0);
+              "><b>Pick-up Date*</b></label>
+          <label class="coc-block-label" for="rdate" id="rdate" style="
+                margin-left: 74px;
+                display: inline;
+                font-size: 30px;
+                font-weight: 800;
+                color: rgb(48, 0, 0);
+              "><b>Return Date*</b></label>
+          <div class="coc-block">
+            <input class="coc-input" type="date" name="pdate" id="pdate" style="width: 230px; height: 40px" required />
+          </div>
+          <div class="coc-block">
+            <input class="coc-input" type="date" name="rdate" id="rdate"
+              style="margin:auto; margin-left: 60px; width: 230px; height: 40px" required />
+          </div>
+        </div>
+      </div>
+      <h6></h6>
+      <button class="button-74" role="button" id="sear-btn">
+        <span class="text">SEARCH</span>
+      </button>
+    </form>
+  </div>
+
+
+
+  <div class="flex-container">
+    <div class="flex-item-left">
+      <img class="container-img" src="Images/fleet.jpg" alt="car photo" />
+      <div class="content-cont">
+        <span class="text">
+          <h2>FLEET</h2>
+        </span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut nulla
+        imperdiet, hendrerit turpis quis, posuere augue. Fusce molestie nibh vel
+        neque suscipit condimentum. Proin sed dignissim nisl, vel tempor orci.
+        Cras ut aliquam neque. Nam mattis odio sed nulla lobortis tincidunt.
+        Mauris sem quam, tempor et dapibus at, fermentum sit amet risus. Sed
+        porta bibendum ligula, at convallis urna imperdiet et.
+      </div>
+      <button onclick="document.location='fleet.html'" class="button-74" role="button" id="go-btn">
+        <span class="text">VIEW MORE</span>
+    </div>
+    <div class="flex-item-right">
+      <img class="container-img" src="Images/team.png" alt="team photo" />
+      <span class="text">
+        <h2>OUR TEAM</h2>
+      </span>
+      <div class="content-cont">
+        Fusce ac faucibus eros, nec luctus quam. Donec non lorem nec libero
+        malesuada tempus id ultricies nulla. Morbi eleifend neque sed faucibus
+        posuere. Fusce vel urna sit amet sem finibus luctus quis non libero.
+        Mauris dignissim pretium pharetra. Phasellus non feugiat sapien. In nec
+        sagittis orci.
+      </div>
+      <button onclick="document.location='aboutUs.html'" class="button-74" role="button" id="go-btn">
+        <span class="text">VIEW MORE</span>
+    </div>
+  </div>
+  <div class="flex-item-bottom">
+    <img class="container-img" src="Images/faqSm.png" alt="faq photo" />
+    <span class="text">
+      <h2>FAQ</h2>
+    </span>
+    <div class="content-cont">
+      Integer at fermentum tortor, eu feugiat arcu. Phasellus ornare laoreet justo a facilisis.
+    </div>
+    <button onclick="document.location='FAQ.html'" class="button-74" role="button" id="go-btn">
+      <span class="text">VIEW MORE</span>
+  </div>
+  <hr class="solid" style="margin-bottom: 90px;">
+  <h1 id="bp">BUSINESS PARTNERS</h1>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/logo1.png" class="d-block w-100" alt="logo" id="clogo">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/logo2.png" class="d-block w-100" alt="logo" id="clogo">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/logo3.png" class="d-block w-100" alt="logo" id="clogo">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/logo4.png" class="d-block w-100" alt="logo" id="clogo">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/logo5.png" class="d-block w-100" alt="logo" id="clogo">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/logo6.png" class="d-block w-100" alt="logo" id="clogo">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/logo7.png" class="d-block w-100" alt="logo" id="clogo">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+    includeHTML();
+  </script>
+</body>
+
+</html>

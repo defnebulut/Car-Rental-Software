@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Settings</title>
+    <link href="css/fleet.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d540061d63.js" crossorigin="anonymous"></script>
+</head>
+<script src="js/navbarFooter.js"></script>
+
+<body>
+    <div w3-include-html="navbar2.html"></div>
+    <div class="container1">
+        <div class="row" style="margin-top: 90px; margin-bottom: 1000px;">
+            <div class="col-sm-4">
+                <h2 style="margin:60px 0 30px 15px; font-weight: 600">
+                    MY ACCOUNT
+                </h2>
+                <a href="accountSettings.html"
+                    style="margin-left: 20px; font-size: 24px;font-weight: 600; color: rgb(0, 0, 114);">Account
+                    Settings</a><br><br>
+                <a href="paymentSettings.html"
+                    style="margin-left: 20px; font-size: 24px;font-weight: 600; color: rgb(0, 0, 114);">Payment
+                    Settings</a><br><br>
+                <a href="myReservations.html"
+                    style="margin-left: 20px; font-size: 24px;font-weight: 600; color: rgb(0, 0, 114);">My
+                    Reservations</a>
+            </div>
+            <div class="col-sm-8" style="margin-top: 60px; background-color: #f3f2f2">
+                <h2 style="margin: 60px 0 30px 15px; font-weight: 600">
+                    PAYMENT SETTINGS
+                </h2>
+                <h3 style="margin: 60px 0 30px 15px; font-weight: 600">
+                    Saved Cards
+                </h3>
+                <hr style="
+              min-width: 400px;
+              width: 50%;
+              text-align: left;
+              margin-left: 0;
+              color: black;" />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox-p" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2"></label>
+                </div>
+                <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+                <span class="text" style="margin-left: 7px;">CARD NAME: Name Surname</span><br><br>
+                <p class="text mb-1">Name&Surname</p>
+                <input class="form-control mb-3" type="text-i" placeholder="Myra Bulut"
+                    style="width: 90%; height: auto" />
+                <p class="text mb-1" style="margin-left: 84px;">Card Number</p>
+                <input class="form-control mb-3" type="text-i" placeholder="1234**********89" disabled
+                    style="width: 90%; height: auto;" />
+                <div class="col-12">
+                    <div class="row" id="ads">
+                        <div class="btn-group">
+                            <a class="ad-btn2" href="#">
+                                update</a>
+                            <a class="ad-btn2" href="#" style="background-color: grey;">
+                                delete</a>
+                        </div>
+                    </div>
+
+                </div>
+                <h3 style="margin: 60px 0 30px 15px; font-weight: 600">
+                    Add New Card
+                </h3>
+                <hr style="
+              min-width: 400px;
+              width: 50%;
+              text-align: left;
+              margin-left: 0;
+              color: black;
+            " />
+            
+            <div class="col-12">
+                <div class="d-flex flex-column">
+                    <p class="text mb-1">Name on Card*</p>
+                    <input class="form-control mb-3" type="text-i" placeholder="Name&Surname" />
+                  </div>
+                <div class="d-flex flex-column">
+                  <p class="text mb-1">Card Number*</p>
+                  <input class="form-control mb-3" type="text-i" placeholder="XXXX-XXXXX-XXXX-XXXX" />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="d-flex flex-column">
+                  <p class="text mb-1">Expiry*</p>
+                  <input class="form-control mb-3" type="text-i" placeholder="MM/YYYY" />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="d-flex flex-column">
+                  <p class="text mb-1">CVV/CVC*</p>
+                  <input class="form-control mb-3 pt-2" type="text-i" placeholder="***" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row" id="ads">
+                  <a class="ad-btn2" href="#">
+                    SAVE</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>
