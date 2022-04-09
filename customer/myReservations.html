@@ -1,238 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Reservations</title>
-    <link href="css/fleet.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/d540061d63.js"
-      crossorigin="anonymous"
-    ></script>
-    
-  </head>
-  <script src="js/navbarFooter.js"></script>
 
-  <body>
-    <div w3-include-html="navbar2.html"></div>
-    <div class="container1">
-      <div class="row" style="margin-top: 90px; margin-bottom: 1000px">
-        <div class="col-sm-4">
-          <h2 style="margin: 60px 0 30px 15px; font-weight: 600">MY ACCOUNT</h2>
-          <a
-            href="accountSettings.html"
-            style="
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Reservations</title>
+  <link href="css/fleet.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d540061d63.js" crossorigin="anonymous"></script>
+</head>
+<script src="js/navbarFooter.js"></script>
+
+<body style="background-color: #f3f2f2">
+  <div w3-include-html="navbar2.html"></div>
+  <div class="container1">
+    <div class="row" style="margin-top: 90px">
+      <div class="col-sm-4">
+        <h2 style="margin: 60px 0 30px 15px; font-weight: 600">MY ACCOUNT</h2>
+        <a href="accountSettings.html" style="
               margin-left: 20px;
               font-size: 24px;
               font-weight: 600;
               color: rgb(0, 0, 114);
-            "
-            >Account Settings</a
-          ><br /><br />
-          <a
-            href="paymentSettings.html"
-            style="
+            ">Account Settings</a><br /><br />
+        <a href="paymentSettings.html" style="
               margin-left: 20px;
               font-size: 24px;
               font-weight: 600;
               color: rgb(0, 0, 114);
-            "
-            >Payment Settings</a
-          ><br /><br />
-          <a
-            href="myReservations.html"
-            style="
+            ">Payment Settings</a><br /><br />
+        <a href="myReservations.html" style="
               margin-left: 20px;
               font-size: 24px;
               font-weight: 600;
               color: rgb(0, 0, 114);
-            "
-            >My Reservations</a
-          >
-        </div>
-        <div
-          class="col-sm-8"
-          style="margin-top: 60px; background-color: #f3f2f2; width: 100%; height: auto; min-height: 1200px;"
-        >
-          <h2 style="margin: 60px 0 30px 15px; font-weight: 600">
-            MY RESERVATIONS
-          </h2>
-          <hr
-            style="
+            ">My Reservations</a>
+      </div>
+      <div class="col-sm-8" style="
+            margin-top: 60px;
+            background-color: #f8f9fa !important;
+            width: 100%;
+            height: auto;
+          ">
+        <h2 style="margin: 60px 0 30px 15px; font-weight: 600">
+          MY RESERVATIONS
+        </h2>
+        <hr style="
               min-width: 400px;
               width: 50%;
               text-align: left;
               margin-left: 0;
+              margin-bottom: 60px;
               color: black;
-            "
-          />
-          
-          <div class="container">
-            <div
-              class="row"
-              style="
+            " />
+
+        <div class="container">
+          <div class="row" style="
                 width: 100%;
                 height: auto;
                 min-height: 370px;
                 padding: 32px;
+                margin-bottom: 30px;
                 border: 2px solid grey;
-              "
-            >
-              <div class="col-4" style="text-align: left">
-                <i
-                  class="fa-solid fa-stopwatch fa-5x"
-                  style="color: rgb(231, 180, 38)"
-                ></i>
-                <h2 style="font-weight: 800; margin-top: 20px;">ONCOMING</h2>
-              </div>
-              <div class="col-8">
-                <h3 style="font-weight: 600">Reservation Details:</h3>
-                <h4 class="inner-text" style="margin-top: 20px"></h4>
-                <h4
-                  style="
-                    margin-top: 60px;
-                    font-weight: 600;
-                    display: inline;
-                  "
-                >
-                  &ensp;  &ensp;&emsp; &emsp;ORDER REF:
-                </h4>
-                <h6 class="inner-text" style="display: inline">
-                  ABCD094GDFS
-                </h6>
-                <br /><br />
-                <h4
-                  style="
-                    margin-top: 60px;
-                    font-weight: 600;
-                    display: inline;
-                  "
-                >
-                  &emsp; &ensp;LICENSE PLATE:
-                </h4>
-                <h6 class="inner-text" style="display: inline">
-                  XCJHD 34 FJKSD
-                </h6>
-                 <br /><br />
-                <h4
-                  style="
-                    margin-top: 60px;
-                    font-weight: 600;
-                    display: inline;
-                  "
-                >
-                &emsp;&emsp; &ensp;ORDER DATE:
-                </h4>
-                <h6 class="inner-text" style="display: inline">
-                  07/04/2022
-                </h6>
-                <br /><br />
-                <h4
-                  style="
-                    margin-top: 60px;
-                    font-weight: 600;
-                    display: inline;
-                  "
-                >
-                &ensp; &emsp;&emsp; &ensp;PRICE PAID:
-                </h4>
-                <h6 class="inner-text" style="display: inline">
-                  $360
-                </h6>
-                <div class="col-12">
-                    <div class="row" id="ads">
-                        <div class="btn-group">
-                            <a class="ad-btn2" href="#">
-                                cancel reservation</a>
+              ">
+            <div class="container overflow-hidden">
+              <div class="row gx-5">
+                <div class="col">
+                  <div class="p-3 bg-light">
+                    <i class="fa-solid fa-stopwatch fa-5x" style="color: rgb(231, 180, 38); margin-left: 50px"></i>
+                    <h2 style="font-weight: 800; margin-top: 20px">
+                      ONCOMING
+                    </h2>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-3 bg-light">
+                    <div class="container2">
+                      <div class="table">
+                        <div class="table-header">
+                          <div class="header__item">order ref</div>
+                          <div class="header__item">license plate</div>
+                          <div class="header__item">order date</div>
+                          <div class="header__item">price paid</div>
                         </div>
+                        <div class="table-content">
+                          <div class="table-row">
+                            <div class="table-data">ABCD094GDFS</div>
+                            <div class="table-data">XCJHD 34 FJKSD</div>
+                            <div class="table-data">06-04-2022</div>
+                            <div class="table-data">360</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-
+                    <div class="row" id="ads" style="margin-bottom: 0px;">
+                      <a class="ad-btn2" href="#"> cancel reservation</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              class="row"
-              style="
+          </div>
+          <div class="row" style="
                 width: 100%;
                 height: auto;
                 min-height: 300px;
                 padding: 32px;
                 border: 2px solid grey;
-              "
-            >
-              <div class="col-4" style="text-align: left">
-                <i class="fa-solid fa-circle-check fa-5x" style="color: green;"></i>
-                <h2 style="font-weight: 800; margin-top: 20px;">COMPLETED</h2>
+              ">
+              <div class="container overflow-hidden">
+                <div class="row gx-5">
+                  <div class="col">
+                    <div class="p-3 bg-light">
+                      <i class="fa-solid fa-circle-check fa-5x" style="color: green; margin-left: 50px"></i>
+                      <h2 style="font-weight: 800; margin-top: 20px;">COMPLETED</h2>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3 bg-light">
+                      <div class="container2">
+                        <div class="table">
+                          <div class="table-header">
+                            <div class="header__item">order ref</div>
+                            <div class="header__item">license plate</div>
+                            <div class="header__item">order date</div>
+                            <div class="header__item">price paid</div>
+                          </div>
+                          <div class="table-content">
+                            <div class="table-row">
+                              <div class="table-data">ABCD094GDFS</div>
+                              <div class="table-data">XCJHD 34 FJKSD</div>
+                              <div class="table-data">06-04-2022</div>
+                              <div class="table-data">360</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-8">
-                <h3 style="font-weight: 600">Reservation Details:</h3>
-                <h4 class="inner-text" style="margin-top: 20px"></h4>
-                <h4
-                  style="
-                    margin-top: 60px;
-                    font-weight: 600;
-                    display: inline;
-                  "
-                >
-                  &ensp;  &ensp;&emsp; &emsp;ORDER REF:
-                </h4>
-                <h6 class="inner-text" style="display: inline">
-                  DFGT563JNFD
-                </h6>
-                <br /><br />
-                <h4
-                  style="
-                    margin-top: 60px;
-                    font-weight: 600;
-                    display: inline;
-                  "
-                >
-                  &emsp; &ensp;LICENSE PLATE:
-                </h4>
-                <h6 class="inner-text" style="display: inline">
-                  FJHDK 34 ASLOY
-                </h6>
-                 <br /><br />
-                <h4
-                  style="
-                    margin-top: 60px;
-                    font-weight: 600;
-                    display: inline;
-                  "
-                >
-                &emsp;&emsp; &ensp;ORDER DATE:
-                </h4>
-                <h6 class="inner-text" style="display: inline">
-                  05/01/2022
-                </h6>
-                <br /><br />
-                <h4
-                  style="
-                    margin-top: 60px;
-                    font-weight: 600;
-                    display: inline;
-                  "
-                >
-                &ensp; &emsp;&emsp; &ensp;PRICE PAID:
-                </h4>
-                <h6 class="inner-text" style="display: inline">
-                  $420
-                </h6>
-              </div>
-            </div>
           </div>
-          
         </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      includeHTML();
-    </script>
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+    includeHTML();
+  </script>
+</body>
+
 </html>

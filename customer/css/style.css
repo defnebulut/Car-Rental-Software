@@ -4,19 +4,28 @@ html {
 }
 body {
   font-family: "Montserrat", sans-serif;
-  padding-bottom: 600px;
+  padding-bottom: 300px;
 }
 /* NAVBAR */
 .navbar-light {
   background-color: black;
 }
 .navbar-light .navbar-brand {
-  font-size: 30px;
+  font-size: 22px;
   display: inline-block;
   position: relative;
   overflow: hidden;
   text-decoration: none;
   color: whitesmoke;
+}
+.vl {
+  height: 120px;
+  margin-right: 250px;
+}
+@media only screen and (max-width: 1026px) {
+  .vl {
+    display: none;
+  }
 }
 .navbar-light .navbar-brand:hover {
   color: whitesmoke;
@@ -88,7 +97,7 @@ body {
     padding: 0 25px;
   }
 }
-.dropdown-toggle{
+.dropdown-toggle {
   background-color: black;
   font-size: 20px;
   width: 230px;
@@ -96,107 +105,99 @@ body {
 }
 
 /* FOOTER */
-.footer-dark {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../Images/car.jpg");
-  background-position: center;
-  background-size: cover;
+.footer-distributed {
+  font-family: "Montserrat", sans-serif;
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
   position: absolute;
   bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 440px;
-  color: #f0f9ff;
-  background-color: #282d322a;
-}
-.row {
-  margin-top: 150px;
-  max-height: 160px;
+  text-align: left;
+  font: normal 16px;
+  padding: 45px 50px;
 }
 
-.footer-dark h2 {
-  color: rgba(255, 255, 255, 0.815);
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-weight: bold;
-}
-
-.footer-dark ul {
-  padding: 0;
-  list-style: none;
-  line-height: 1.6;
+.footer-distributed .footer-left p {
+  color: #8f9296;
   font-size: 14px;
-  margin-bottom: 0;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
 }
 
-.footer-dark ul a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.6;
-}
-
-.footer-dark ul a:hover {
-  opacity: 0.8;
-}
-
-@media (max-width: 767px) {
-  .footer-dark .item:not(.social) {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-}
-
-.footer-dark .item.text {
-  margin-bottom: 36px;
-}
-
-@media (max-width: 767px) {
-  .footer-dark .item.text {
-    margin-bottom: 0;
-  }
-}
-
-.footer-dark .item.text p {
-  opacity: 0.6;
-  margin-bottom: 0;
-}
-
-.footer-dark .item.social {
-  text-align: center;
-}
-
-@media (max-width: 991px) {
-  .footer-dark .item.social {
-    text-align: center;
-    margin-top: 20px;
-  }
-}
-
-.footer-dark .item.social > a {
-  margin-bottom: 100px;
-  font-size: 20px;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
+.footer-distributed p.footer-links a {
   display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
-  margin: 0 8px;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
   color: #fff;
-  opacity: 0.75;
+  display: inline-block;
+  padding-right: 5px;
 }
 
-.footer-dark .item.social > a:hover {
-  opacity: 0.9;
+.footer-distributed .footer-links .link-1:before {
+  content: none;
 }
 
-.footer-dark .copyright {
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
   text-align: center;
-  padding-top: 24px;
-  opacity: 0.3;
-  font-size: 13px;
-  margin-bottom: 0;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
 }
 
 /*HOME PAGE*/
@@ -215,7 +216,7 @@ body {
   max-width: 830px;
   padding: 16px;
   background-color: rgba(255, 255, 255, 0.692);
-  top: 104px;
+  top: 128px;
   left: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -224,19 +225,17 @@ body {
   background-color: rgba(255, 255, 255, 0.911);
 }
 
-input[type="text"] ,
-input[type="password"]{
+input[type="text"],
+input[type="password"] {
   padding: 15px;
   margin: 15px 0 22px 0;
   border: none;
   background: rgb(224, 223, 223);
 }
-
-input[type="text"]:focus, input[type="password"]:focus{
-  border: 1px solid rgba(0, 0, 0, 0.767);
-  background-color: rgb(209, 207, 207);
-  outline: none;
+.form-select{
+  background-color: rgb(224, 223, 223);
 }
+
 #sear-btn {
   width: 100%;
   margin-top: 25px;
@@ -280,17 +279,26 @@ input {
   vertical-align: middle;
   padding-bottom: 3px;
 }
+@media only screen and (max-width: 800px) {
+  #h-form{
+    top:0px;
+    margin-bottom: 90px;
+  }
+  .coc-block-label{
+    display: inline-block;
+  }
+  .coc-block{
+    display: block;
+  }
+}
 .coc-block-label {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: right;
-  padding-bottom: 3px;
-  padding-right: 5px;
-  margin-bottom: 0;
+  font-size: 22px;
+  color: rgb(48, 0, 0);
 }
 .coc-input {
+  width: 230px; 
+  height: 40px;
   font-family: Calibri;
-  height: 20px;
   margin: auto;
   font-size: 18px;
   padding-left: 3px;
@@ -300,6 +308,7 @@ input {
 .coc-form {
   padding-top: 5px;
   padding-left: 8px;
+  display: inline;
 }
 
 .container-img {
@@ -571,27 +580,25 @@ a.text-secondary:hover {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.py-4{
+/*CONTACT US PAGE*/
+.py-4 {
   background-color: #f3f2f2;
 }
-.py-4:hover{
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-#i-l{
+#i-l {
   margin-left: 8%;
   margin-top: 90px;
   background-color: white;
 }
-#i-l:hover{
+#i-l:hover {
   box-shadow: white 3px 3px 0 0;
 }
-#i-r:hover{
+#i-r:hover {
   box-shadow: white 3px 3px 0 0;
 }
-#i-r{
+#i-r {
   background-color: white;
 }
-#cont-fl{
+#cont-fl {
   text-align: left;
   color: rgb(66, 66, 66);
 }
