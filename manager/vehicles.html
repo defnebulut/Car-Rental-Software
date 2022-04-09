@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vehicles</title>
+  <script src="https://kit.fontawesome.com/d540061d63.js" crossorigin="anonymous"></script>
+  <!--Tab import-->
+</head>
+<script src="js/navbarFooter.js"></script>
+
+<body>
+  <div w3-include-html="navbarFooter.html"></div>
+  <div class="row g-0">
+    <div class="col-6 col-md-2">
+      <div style="margin-top: 40%">
+        <a class="mang-menu" href="Departments.html">Departments</a>
+        <a class="mang-menu" href="reservations.html">Reservations</a>
+        <a class="mang-menu" href="vehicles.html">Vehicles</a>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-8">
+      <h2 style="text-align: center; margin: 100px 0 40px 0">VEHICLES</h2>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="margin: auto">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-a-tab" data-bs-toggle="pill" data-bs-target="#pills-a" type="button"
+            role="tab" aria-controls="pills-a" aria-selected="true">
+            See Cars
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+            role="tab" aria-controls="pills-home" aria-selected="false">
+            Add Car
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+            Delete Car
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+            Update Car
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-a" role="tabpanel" aria-labelledby="pills-a-tab">
+          <h3 style="margin: 20px 0 10px 0">See Cars:</h3>
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          <div class="container1" style="margin-top: 5%;">
+            <div class="table">
+              <div class="table-header">
+                <div class="header__item">license plate</div>
+                <div class="header__item">car id</div>
+                <div class="header__item">status</div>
+                <div class="header__item">price</div>
+              </div>
+              <div class="table-content">
+                <div class="table-row">
+                  <div class="table-data">XCJHD 34 FJKSD</div>
+                  <div class="table-data">VFA1000975</div>
+                  <div class="table-data">ACTIVE</div>
+                  <div class="table-data">$46</div>
+                </div>
+                <div class="table-row">
+                  <div class="table-data">XCJHD 34 FJKSD</div>
+                  <div class="table-data">VFA1000975</div>
+                  <div class="table-data">DEACTIVE</div>
+                  <div class="table-data">$28</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <h3 style="margin: 20px 0 40px 0">Add New Car:</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-8" style="margin-bottom: 250px">
+                <form action="vehicles.html">
+                  <div class="mb-3">
+                    <label class="form-label" for="licensePlate">LICENSE PLATE*</label>
+                    <input class="form-control" id="licensePlate" type="text" placeholder="XXXXX-00-XXXX" required />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label" for="carId">CAR ID*</label>
+                    <input class="form-control" id="carId" type="text" placeholder="XXX0000000" required />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="price">PRICE(per day)*</label>
+                    <input class="form-control" id="price" type="text" placeholder="$000" required />
+                  </div>
+                  <div class="btn-group" style="margin-top: 30px;">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false" id="brand-model">
+                      Car Brand
+                    </button>
+                    <ul class="dropdown-menu" id="br-mod">
+                      <li>Audi</li>
+                      <li>Ferrari</li>
+                      <li>Honda</li>
+                      <li>Hyundai</li>
+                      <li>Porsche</li>
+                    </ul>
+                  </div>
+                  <div class="btn-group" style="margin-top: 30px;">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false" id="brand-model">
+                      Car Model
+                    </button>
+                    <ul class="dropdown-menu" id="br-mod">
+                      <li>A4</li>
+                      <li>A5</li>
+                      <li>another model</li>
+                      <li>another model</li>
+                    </ul>
+                  </div>
+                  <div style="display: flex; margin-bottom: 50px;">
+                    <div style=" margin-right: 50px;">
+                      <h4>Gear:</h4>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Auto
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Manuel
+                        </label>
+                      </div>
+                    </div>
+                    <div style=" margin-right: 50px;">
+                      <h4>People Count:</h4>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>People</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5+</option>
+                      </select>
+                    </div>
+                    <div>
+                      <h4>Luggage Capacity:</h4>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Bags</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4+</option>
+                      </select>
+                    </div>
+                  </div>
+                  <h4>Other Features:</h4>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Bluetooth
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Another Feature1
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Another Feature2
+                    </label>
+                  </div>
+                  <div class="d-grid">
+                    <button type="submit" class="button-31" id="add-btn">
+                      SAVE
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-4">
+                <form action="#" method="post" enctype="multipart/form-data">
+                  <label style="margin-left: 50px">Select Image File:</label><br />
+                  <i class="fa-solid fa-image fa-8x" style="margin-left: 50px; color: grey"></i>
+                  <input type="file" name="image" style="margin-left: 50px" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          <div class="container1" style="margin-top: 5%;">
+            <div class="table">
+              <div class="table-header">
+                <div class="header__item">license plate</div>
+                <div class="header__item">car id</div>
+                <div class="header__item"></div>
+              </div>
+              <div class="table-content">
+                <div class="table-row">
+                  <div class="table-data">XCJHD 34 FJKSD</div>
+                  <div class="table-data">VFA1000975</div>
+                  <div class="table-data">
+                    <button class="button-31" role="button">DELETE</button>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="table-data">XCJHD 34 FJKSD</div>
+                  <div class="table-data">VFA1000975</div>
+                  <div class="table-data">
+                    <button class="button-31" role="button">DELETE</button>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="table-data">XCJHD 34 FJKSD</div>
+                  <div class="table-data">VFA1000975</div>
+                  <div class="table-data">
+                    <button class="button-31" role="button">DELETE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          <div class="container1" style="margin-top: 5%;">
+            <div class="table">
+              <div class="table-header">
+                <div class="header__item">license plate</div>
+                <div class="header__item">car id</div>
+                <div class="header__item">status</div>
+                <div class="header__item">price</div>
+                
+                <div class="header__item"></div>
+                <div class="header__item"></div>
+              </div>
+              <div class="table-content">
+                <div class="table-row">
+                  <div class="table-data">XCJHD 34 FJKSD</div>
+                  <div class="table-data">VFA1000975</div>
+                  <div class="table-data">ACTIVE</div>
+                  <div class="table-data">$46</div>
+                  <div class="table-data">
+                    <button class="button-31" role="button">DISABLE</button>
+                  </div>
+                  <div class="table-data">
+                    <button type="button" class="button-31" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">EDIT</button>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="table-data">XCJHD 34 FJKSD</div>
+                  <div class="table-data">VFA1000975</div>
+                  <div class="table-data">ACTIVE</div>
+                  <div class="table-data">$28</div>
+                  <div class="table-data">
+                    <button class="button-31" role="button">DISABLE</button>
+                  </div>
+                  <div class="table-data">
+                    <button type="button" class="button-31" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">EDIT</button>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="table-data">XCJHD 34 FJKSD</div>
+                  <div class="table-data">VFA1000975</div>
+                  <div class="table-data">DEACTIVE</div>
+                  <div class="table-data">$78</div>
+                  <div class="table-data">
+                    <button class="button-31" role="button">ACTIVATE</button>
+                  </div>
+                  <div class="table-data">
+                    <button type="button" class="button-31" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">EDIT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: rgba(0, 0, 0, 0.795); color:whitesmoke">
+                  <h5 class="modal-title" id="exampleModalLabel">EDIT FEATURES</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="vehicles.html">
+                    <div class="mb-3">
+                      <label class="form-label" for="licensePlate">LICENSE PLATE*</label>
+                      <input class="form-control" id="licensePlate" type="text" placeholder="XXXXX-00-XXXX" required />
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label" for="carId">CAR ID*</label>
+                      <input class="form-control" id="carId" type="text" placeholder="XXX0000000" required />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="price">PRICE(per day)*</label>
+                      <input class="form-control" id="price" type="text" placeholder="$000" required />
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="button-31" id="save-btn" data-bs-dismiss="modal">SAVE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-2">
+      <div class="post-it" contenteditable>
+        <h1>To Do List</h1>
+        <ul>
+          <li>Cancel Reservation:ABCD094GDFS</li>
+          <li>Remove car:VFA1000975</li>
+        </ul>
+      </div>
+      <hr class="solid" width="90%" style="margin: auto; margin-top: 90px" />
+      <h3 style="text-align: center; margin: 30px 0 20px 0">
+        Helpful Links:
+      </h3>
+      <div style="text-align: center">
+        <a class="mang-menu" id="smaller-menu" href="#">How to do something?</a>
+        <a class="mang-menu" id="smaller-menu" href="#">How to do another thing?</a>
+        <a class="mang-menu" id="smaller-menu" href="#">How to do another thing?</a>
+        <a class="mang-menu" id="smaller-menu" href="#">How to do another thing?</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    includeHTML();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
