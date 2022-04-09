@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://kit.fontawesome.com/d540061d63.js" crossorigin="anonymous"></script>
+</head>
+<script src="js/navbarFooter.js"></script>
+
+<body>
+  <div w3-include-html="navbarFooter.html"></div>
+  <div class="row g-0">
+    <div class="col-6 col-md-2">
+      <div style="margin-top: 40%">
+        <a class="mang-menu" href="Departments.html">Departments</a>
+        <a class="mang-menu" href="reservations.html">Reservations</a>
+        <a class="mang-menu" href="vehicles.html">Vehicles</a>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-8">
+      <h1 style="text-align: center; margin:80px 0 50px 0">DASHBOARD</h1>
+      <div class="container">
+        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+          <div class="col">
+            <div class="p-3 border bg-light">
+              <i class="fa-solid fa-users fa-2x" style="color: black;"></i>
+              &emsp;1.000.000 MEMBERS
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">
+              <i class="fa-solid fa-dollar-sign fa-2x" style="color: green;"></i>
+              INCOME(per month)
+              <span class="text">$28374</span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">
+              <i class="fa-solid fa-dollar-sign fa-2x" style="color: rgb(131, 0, 0);"></i>
+              EXPENSE(per month)&emsp;
+              <span class="text">$1273</span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">
+              <i class="fa-solid fa-car fa-2x" style="color: black;"></i>
+              &emsp;CARS&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              <span class="text">1273</span>
+            </div>
+          </div>
+        </div>
+        <h2 style="text-align: center; margin:100px 0 40px 0">EMPLOYEE RATES</h2>
+        <div class="container1">
+          <div class="table">
+            <div class="table-header">
+              <div class="header__item">Order</div>
+              <div class="header__item">Name</div>
+              <div class="header__item">Surname</div>
+              <div class="header__item">Email</div>
+              <div class="header__item">Department</div>
+              <div class="header__item">Status</div>
+            </div>
+            <div class="table-content">	
+              <div class="table-row">
+                <div class="table-data">#1</div>
+                <div class="table-data">Melih</div>
+                <div class="table-data">GÜNAY</div>
+                <div class="table-data">mgunay@akdeniz.edu.tr</div>
+                <div class="table-data">CSE</div>
+                <div class="table-data">Header</div>
+              </div>
+              <div class="table-row">		
+                <div class="table-data">#2</div>
+                <div class="table-data">Defne</div>
+                <div class="table-data">BULUT</div>
+                <div class="table-data">d.bulut0907@gmail.com</div>
+                <div class="table-data">CSE236</div>
+                <div class="table-data">Student</div>
+              </div>
+              <div class="table-row">
+                <div class="table-data">#3</div>
+                <div class="table-data">Myra</div>
+                <div class="table-data">BULUT</div>
+                <div class="table-data">myrabulut@meow.com</div>
+                <div class="table-data">Home</div>
+                <div class="table-data">Cat</div>
+              </div>
+              <div class="table-row">
+                <div class="table-data">#4</div>
+                <div class="table-data">Ghost</div>
+                <div class="table-data">AKGUN</div>
+                <div class="table-data">ghostakgun@meow.com</div>
+                <div class="table-data">Home</div>
+                <div class="table-data">Cat</div>
+              </div>
+              <div class="table-row">
+                <div class="table-data">#5</div>
+                <div class="table-data">Someone</div>
+                <div class="table-data">Somename</div>
+                <div class="table-data">example@gmail.com</div>
+                <div class="table-data">IEEE</div>
+                <div class="table-data">Assc. Prof.</div>
+              </div>
+            </div>	
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-6 col-md-2">
+      <div class='post-it' contenteditable>
+        <h1>To Do List</h1>
+        <ul>
+          <li>Cancel Reservation:ABCD094GDFS
+          </li>
+          <li>Remove car:VFA1000975</li>
+        </ul>
+
+      </div>
+      <hr class="solid" width="90%" style="margin: auto; margin-top: 90px;">
+      <h3 style="text-align: center; margin: 30px 0 20px 0;">Helpful Links:</h3>
+      <div style="text-align: center;">
+        <a class="mang-menu" id="smaller-menu" href="#">How to do something?</a>
+        <a class="mang-menu" id="smaller-menu" href="#">How to do another thing?</a>
+        <a class="mang-menu" id="smaller-menu" href="#">How to do another thing?</a>
+        <a class="mang-menu" id="smaller-menu" href="#">How to do another thing?</a>
+      </div>
+    </div>
+  </div>
+  <script>includeHTML()</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
